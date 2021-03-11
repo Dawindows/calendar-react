@@ -1,0 +1,36 @@
+.calendar {
+  width: 920px;
+  margin: 62px auto;
+}
+
+.table td {
+  width: 146px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+#add-event {
+  margin-left: 12px;
+}
+
+.card-header-title {
+  padding: 0 0 8px 0;
+}
+
+.calendar-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.selected {
+  opacity: 0.6;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
