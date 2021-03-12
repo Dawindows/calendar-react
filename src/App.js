@@ -1,8 +1,7 @@
-import React from "react";
-import {Calendar} from './calendar/calendar'
+import React from 'react';
+import { Calendar } from './calendar/calendar';
 
 function App() {
-
   return (
     <div className="App">
       <Calendar></Calendar>

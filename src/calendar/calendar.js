@@ -1,8 +1,7 @@
-import React from "react";
-// import { membersService } from "../core/service/members.service";
-import { DAYS } from "../core/constants/days";
-import { TIMES } from "../core/constants/times";
-import "./calendar.css";
+import React from 'react';
+import { DAYS } from '../core/constants/days';
+import { TIMES } from '../core/constants/times';
+import './calendar.css';
 
 const days = DAYS;
 const times = TIMES;
@@ -11,31 +10,19 @@ export function Calendar() {
   const table = times.map((time) => {
     const items = days.map((day) => (
       <td
-        key={day.toLowerCase() + "-" + time}
+        key={`${day.toLowerCase()}-${time}`}
         className="container"
-        id={day.toLowerCase() + "-" + time}
+        id={`${day.toLowerCase()}-${time}`}
       ></td>
     ));
-  
+
     return (
       <tr key={time}>
-        <td key={time}>{time}:00</td>
+        <td>{time}:00</td>
         {items}
       </tr>
     );
   });
-
-  // async function getMembersFromService() {
-  //   const getMembers = await membersService.getAllMembers()
-  //     .then((data) => data);
-
-  //   const members = getMembers.map((member) => (
-  //     <option className="member" value={member.name}>
-  //       {member.name}
-  //     </option>
-  //   ));
-  //   return members;
-  // }
 
   return (
     <div className="calendar card">
@@ -70,7 +57,7 @@ export function Calendar() {
         </table>
         <div className="calendar-footer">
           <div></div>
-          <div id="sign-out">sign out</div>
+          <a id="sign-out">sign out</a>
         </div>
       </div>
     </div>
