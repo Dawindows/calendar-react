@@ -1,9 +1,8 @@
-import { serverService } from '../service/server.service';
+import { getMembers } from '../service/server.service';
 import { factory } from './member-factory';
 
-export const getMember = async () => {
-  const response = await serverService.get('members');
-  const content = await response.json();
+export const getMember = () => {
+  const content = getMembers();
 
   const data = content.map((element) =>
     factory.create(

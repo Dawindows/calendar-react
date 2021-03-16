@@ -7,7 +7,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  text-decoration: none;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.message-header {
+  height: 32px;
+  padding: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  word-break: break-all;
+  border-radius: 0;
+  cursor: pointer;
 }
