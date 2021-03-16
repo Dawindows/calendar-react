@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { membersService } from '../core/service/members.service';
 import { DAYS } from '../core/constants/days';
 import { TIMES } from '../core/constants/times';
-import { getEvents } from '../core/service/server.service';
+// import { getEvents } from '../core/service/server.service';
 import './calendar.css';
 
 const Calendar = () => {
