@@ -14,6 +14,9 @@
 1. install webpack\webpack-cli `npm install`
 2. launch a project `npm start`
 
+### Scripts
+* `npm run lint` - run eslint;
+* `npm run prettier` - run prettier;
 
 ### Contact information for programmer
 
